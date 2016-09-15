@@ -1,8 +1,5 @@
-from pip.req import parse_requirements
 from setuptools import setup, find_packages
 
-install_reqs = parse_requirements('requirements.txt', session=False)
-reqs = [str(ir.req) for ir in install_reqs]
 
 setup(
     name='uwsgi-cloudwatch',
@@ -13,7 +10,12 @@ setup(
     author_email='jstewart@wdtinc.com',
     description='uwsgi-cloudwatch',
     url='https://github.com/wdtinc/uwsgi-cloudwatch',
-    install_requires=reqs,
+    install_requires=[
+        'click==6.6',
+        'requests==2.11.1',
+        'boto3==1.4.0',
+        'arrow==0.8.0'
+    ],
     zip_safe=False,
     classifiers=(
         'Development Status :: 3 - Alpha',
