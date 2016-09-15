@@ -30,11 +30,11 @@ def run_periodically(func, interval):
     _set()
 
 
-def put_metrics(metrics, namespace, metric_prefix):
+def put_metrics(metrics, region, namespace, metric_prefix):
     """ Puts metrics in target CloudWatch namespace. """
 
     timestamp = arrow.get().datetime
-    client = boto3.client('cloudwatch')
+    client = boto3.client('cloudwatch', region_name=region)
 
     # Assemble Metrics
     metric_data = []
@@ -172,7 +172,7 @@ def retrieve_stats(stats_server):
     return response.json()
 
 
-def update_cloudwatch_metrics(stats_server, namespace, metric_prefix):
+def update_cloudwatch_metrics(stats_server, region, namespace, metric_prefix):
     """ Update a CloudWatch namespace with the latest metrics generated from
         uWSGI Stats Server.
     """
@@ -183,7 +183,7 @@ def update_cloudwatch_metrics(stats_server, namespace, metric_prefix):
             logging.error("Failed to retrieve uWSGI stats: %s" % e)
         try:
             metrics = generate_metrics(stats)
-            put_metrics(metrics, namespace, metric_prefix)
+            put_metrics(metrics, region, namespace, metric_prefix)
         except Exception as e:
             logging.error("Failed to put metrics: %s" % e)
 
@@ -192,9 +192,10 @@ def update_cloudwatch_metrics(stats_server, namespace, metric_prefix):
 
 @click.command()
 @click.argument('stats-server')
+@click.option('--region', default='us-east-1')
 @click.option('--namespace', required=True, callback=validation.namespace)
 @click.option('--frequency', default=60, callback=validation.frequency)
 @click.option('--metric-prefix', default='uWSGI', callback=validation.prefix)
-def cli(stats_server, namespace, frequency, metric_prefix):
-    run_periodically(update_cloudwatch_metrics(stats_server, namespace, metric_prefix), frequency)
+def cli(stats_server, region, namespace, frequency, metric_prefix):
+    run_periodically(update_cloudwatch_metrics(stats_server, region, namespace, metric_prefix), frequency)
     asyncio.get_event_loop().run_forever()
