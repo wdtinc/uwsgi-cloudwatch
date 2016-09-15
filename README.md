@@ -37,8 +37,6 @@ By default, uwsgi-cloudwatch will report metrics every minute. If you wanted to 
 uwsgi-cloudwatch http://localhost:9091 --namespace "Foo/Bar/Baz" --frequency 300
 ```
 
-Check out [this screenshot](/static/img/uwsgi_dashboard.png) of a uWSGI CloudWatch Dashboard we use for one of our apps.
-
 Metrics
 -------
 uWSGI Stats Server [exposes stats](http://uwsgi-docs.readthedocs.io/en/latest/StatsServer.html#the-uwsgi-stats-server) that are made available as metrics:
