@@ -1,0 +1,401 @@
+{
+	"version":"2.0.13.1",
+	"signal_queue":0,
+	"load":0,
+	"pid":63902,
+	"uid":769058469,
+	"gid":37678515,
+	"cwd":"/Users/jstewart/Dev/uwsgi-testing",
+	"locks":[
+		{
+			"user 0":0
+		},
+		{
+			"signal":0
+		},
+		{
+			"filemon":0
+		},
+		{
+			"timer":0
+		},
+		{
+			"rbtimer":0
+		},
+		{
+			"cron":0
+		},
+		{
+			"rpc":0
+		},
+		{
+			"snmp":0
+		}
+	],
+	"sockets":[
+		{
+			"name":"127.0.0.1:52992",
+			"proto":"uwsgi",
+			"queue":0,
+			"max_queue":0,
+			"shared":0,
+			"can_offload":0
+		}
+	],
+	"workers":[
+		{
+			"id":1,
+			"pid":63903,
+			"accepting":1,
+			"requests":305,
+			"delta_requests":305,
+			"exceptions":0,
+			"harakiri_count":0,
+			"signals":0,
+			"signal_queue":0,
+			"status":"busy",
+			"rss":0,
+			"vsz":0,
+			"running_time":917565581,
+			"last_spawn":1473866221,
+			"respawn_count":1,
+			"tx":61310,
+			"avg_rt":3017153,
+			"apps":[
+				{
+					"id":0,
+					"modifier1":0,
+					"mountpoint":"",
+					"startup_time":0,
+					"requests":310,
+					"exceptions":0,
+					"chdir":""
+				}
+			],
+			"cores":[
+				{
+					"id":0,
+					"requests":61,
+					"static_requests":0,
+					"routed_requests":0,
+					"offloaded_requests":0,
+					"write_errors":0,
+					"read_errors":0,
+					"in_request":1,
+					"vars":[
+"REQUEST_METHOD=GET",
+"REQUEST_URI=/",
+"PATH_INFO=/",
+"QUERY_STRING=",
+"SERVER_PROTOCOL=HTTP/1.1",
+"SCRIPT_NAME=",
+"SERVER_NAME=jstewart.norman.wdtinc.com",
+"SERVER_PORT=9090",
+"UWSGI_ROUTER=http",
+"REMOTE_ADDR=127.0.0.1",
+"REMOTE_PORT=33482",
+"HTTP_HOST=localhost:9090",
+"HTTP_CONNECTION=keep-alive",
+"HTTP_ACCEPT_ENCODING=gzip, deflate",
+"HTTP_ACCEPT=*/*",
+"HTTP_USER_AGENT=python-requests/2.9.1",
+""
+					]
+				},
+				{
+					"id":1,
+					"requests":61,
+					"static_requests":0,
+					"routed_requests":0,
+					"offloaded_requests":0,
+					"write_errors":0,
+					"read_errors":0,
+					"in_request":1,
+					"vars":[
+"REQUEST_METHOD=GET",
+"REQUEST_URI=/",
+"PATH_INFO=/",
+"QUERY_STRING=",
+"SERVER_PROTOCOL=HTTP/1.1",
+"SCRIPT_NAME=",
+"SERVER_NAME=jstewart.norman.wdtinc.com",
+"SERVER_PORT=9090",
+"UWSGI_ROUTER=http",
+"REMOTE_ADDR=127.0.0.1",
+"REMOTE_PORT=32970",
+"HTTP_HOST=localhost:9090",
+"HTTP_CONNECTION=keep-alive",
+"HTTP_ACCEPT_ENCODING=gzip, deflate",
+"HTTP_ACCEPT=*/*",
+"HTTP_USER_AGENT=python-requests/2.9.1",
+""
+					]
+				},
+				{
+					"id":2,
+					"requests":61,
+					"static_requests":0,
+					"routed_requests":0,
+					"offloaded_requests":0,
+					"write_errors":0,
+					"read_errors":0,
+					"in_request":1,
+					"vars":[
+"REQUEST_METHOD=GET",
+"REQUEST_URI=/",
+"PATH_INFO=/",
+"QUERY_STRING=",
+"SERVER_PROTOCOL=HTTP/1.1",
+"SCRIPT_NAME=",
+"SERVER_NAME=jstewart.norman.wdtinc.com",
+"SERVER_PORT=9090",
+"UWSGI_ROUTER=http",
+"REMOTE_ADDR=127.0.0.1",
+"REMOTE_PORT=32458",
+"HTTP_HOST=localhost:9090",
+"HTTP_CONNECTION=keep-alive",
+"HTTP_ACCEPT_ENCODING=gzip, deflate",
+"HTTP_ACCEPT=*/*",
+"HTTP_USER_AGENT=python-requests/2.9.1",
+""
+					]
+				},
+				{
+					"id":3,
+					"requests":61,
+					"static_requests":0,
+					"routed_requests":0,
+					"offloaded_requests":0,
+					"write_errors":0,
+					"read_errors":0,
+					"in_request":1,
+					"vars":[
+"REQUEST_METHOD=GET",
+"REQUEST_URI=/",
+"PATH_INFO=/",
+"QUERY_STRING=",
+"SERVER_PROTOCOL=HTTP/1.1",
+"SCRIPT_NAME=",
+"SERVER_NAME=jstewart.norman.wdtinc.com",
+"SERVER_PORT=9090",
+"UWSGI_ROUTER=http",
+"REMOTE_ADDR=127.0.0.1",
+"REMOTE_PORT=38346",
+"HTTP_HOST=localhost:9090",
+"HTTP_CONNECTION=keep-alive",
+"HTTP_ACCEPT_ENCODING=gzip, deflate",
+"HTTP_ACCEPT=*/*",
+"HTTP_USER_AGENT=python-requests/2.9.1",
+""
+					]
+				},
+				{
+					"id":4,
+					"requests":61,
+					"static_requests":0,
+					"routed_requests":0,
+					"offloaded_requests":0,
+					"write_errors":0,
+					"read_errors":0,
+					"in_request":1,
+					"vars":[
+"REQUEST_METHOD=GET",
+"REQUEST_URI=/",
+"PATH_INFO=/",
+"QUERY_STRING=",
+"SERVER_PROTOCOL=HTTP/1.1",
+"SCRIPT_NAME=",
+"SERVER_NAME=jstewart.norman.wdtinc.com",
+"SERVER_PORT=9090",
+"UWSGI_ROUTER=http",
+"REMOTE_ADDR=127.0.0.1",
+"REMOTE_PORT=37322",
+"HTTP_HOST=localhost:9090",
+"HTTP_CONNECTION=keep-alive",
+"HTTP_ACCEPT_ENCODING=gzip, deflate",
+"HTTP_ACCEPT=*/*",
+"HTTP_USER_AGENT=python-requests/2.9.1",
+""
+					]
+				}
+			]
+		},
+		{
+			"id":2,
+			"pid":63904,
+			"accepting":1,
+			"requests":307,
+			"delta_requests":307,
+			"exceptions":0,
+			"harakiri_count":0,
+			"signals":0,
+			"signal_queue":0,
+			"status":"busy",
+			"rss":0,
+			"vsz":0,
+			"running_time":923616761,
+			"last_spawn":1473866221,
+			"respawn_count":1,
+			"tx":61710,
+			"avg_rt":3017063,
+			"apps":[
+				{
+					"id":0,
+					"modifier1":0,
+					"mountpoint":"",
+					"startup_time":0,
+					"requests":312,
+					"exceptions":0,
+					"chdir":""
+				}
+			],
+			"cores":[
+				{
+					"id":0,
+					"requests":61,
+					"static_requests":0,
+					"routed_requests":0,
+					"offloaded_requests":0,
+					"write_errors":0,
+					"read_errors":0,
+					"in_request":1,
+					"vars":[
+"REQUEST_METHOD=GET",
+"REQUEST_URI=/",
+"PATH_INFO=/",
+"QUERY_STRING=",
+"SERVER_PROTOCOL=HTTP/1.1",
+"SCRIPT_NAME=",
+"SERVER_NAME=jstewart.norman.wdtinc.com",
+"SERVER_PORT=9090",
+"UWSGI_ROUTER=http",
+"REMOTE_ADDR=127.0.0.1",
+"REMOTE_PORT=33738",
+"HTTP_HOST=localhost:9090",
+"HTTP_CONNECTION=keep-alive",
+"HTTP_ACCEPT_ENCODING=gzip, deflate",
+"HTTP_ACCEPT=*/*",
+"HTTP_USER_AGENT=python-requests/2.9.1",
+""
+					]
+				},
+				{
+					"id":1,
+					"requests":61,
+					"static_requests":0,
+					"routed_requests":0,
+					"offloaded_requests":0,
+					"write_errors":0,
+					"read_errors":0,
+					"in_request":1,
+					"vars":[
+"REQUEST_METHOD=GET",
+"REQUEST_URI=/",
+"PATH_INFO=/",
+"QUERY_STRING=",
+"SERVER_PROTOCOL=HTTP/1.1",
+"SCRIPT_NAME=",
+"SERVER_NAME=jstewart.norman.wdtinc.com",
+"SERVER_PORT=9090",
+"UWSGI_ROUTER=http",
+"REMOTE_ADDR=127.0.0.1",
+"REMOTE_PORT=33226",
+"HTTP_HOST=localhost:9090",
+"HTTP_CONNECTION=keep-alive",
+"HTTP_ACCEPT_ENCODING=gzip, deflate",
+"HTTP_ACCEPT=*/*",
+"HTTP_USER_AGENT=python-requests/2.9.1",
+""
+					]
+				},
+				{
+					"id":2,
+					"requests":61,
+					"static_requests":0,
+					"routed_requests":0,
+					"offloaded_requests":0,
+					"write_errors":0,
+					"read_errors":0,
+					"in_request":1,
+					"vars":[
+"REQUEST_METHOD=GET",
+"REQUEST_URI=/",
+"PATH_INFO=/",
+"QUERY_STRING=",
+"SERVER_PROTOCOL=HTTP/1.1",
+"SCRIPT_NAME=",
+"SERVER_NAME=jstewart.norman.wdtinc.com",
+"SERVER_PORT=9090",
+"UWSGI_ROUTER=http",
+"REMOTE_ADDR=127.0.0.1",
+"REMOTE_PORT=37578",
+"HTTP_HOST=localhost:9090",
+"HTTP_CONNECTION=keep-alive",
+"HTTP_ACCEPT_ENCODING=gzip, deflate",
+"HTTP_ACCEPT=*/*",
+"HTTP_USER_AGENT=python-requests/2.9.1",
+""
+					]
+				},
+				{
+					"id":3,
+					"requests":61,
+					"static_requests":0,
+					"routed_requests":0,
+					"offloaded_requests":0,
+					"write_errors":0,
+					"read_errors":0,
+					"in_request":1,
+					"vars":[
+"REQUEST_METHOD=GET",
+"REQUEST_URI=/",
+"PATH_INFO=/",
+"QUERY_STRING=",
+"SERVER_PROTOCOL=HTTP/1.1",
+"SCRIPT_NAME=",
+"SERVER_NAME=jstewart.norman.wdtinc.com",
+"SERVER_PORT=9090",
+"UWSGI_ROUTER=http",
+"REMOTE_ADDR=127.0.0.1",
+"REMOTE_PORT=32714",
+"HTTP_HOST=localhost:9090",
+"HTTP_CONNECTION=keep-alive",
+"HTTP_ACCEPT_ENCODING=gzip, deflate",
+"HTTP_ACCEPT=*/*",
+"HTTP_USER_AGENT=python-requests/2.9.1",
+""
+					]
+				},
+				{
+					"id":4,
+					"requests":63,
+					"static_requests":0,
+					"routed_requests":0,
+					"offloaded_requests":0,
+					"write_errors":0,
+					"read_errors":0,
+					"in_request":1,
+					"vars":[
+"REQUEST_METHOD=GET",
+"REQUEST_URI=/",
+"PATH_INFO=/",
+"QUERY_STRING=",
+"SERVER_PROTOCOL=HTTP/1.1",
+"SCRIPT_NAME=",
+"SERVER_NAME=jstewart.norman.wdtinc.com",
+"SERVER_PORT=9090",
+"UWSGI_ROUTER=http",
+"REMOTE_ADDR=127.0.0.1",
+"REMOTE_PORT=38090",
+"HTTP_HOST=localhost:9090",
+"HTTP_CONNECTION=keep-alive",
+"HTTP_ACCEPT_ENCODING=gzip, deflate",
+"HTTP_ACCEPT=*/*",
+"HTTP_USER_AGENT=python-requests/2.9.1",
+""
+					]
+				}
+			]
+		}
+	]
+}
