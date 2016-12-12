@@ -10,6 +10,7 @@ Requirements
 ------------
 - Your instance or resource running uwsgi-cloudwatch MUST be [assigned an IAM role](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html) that allows you to put CloudWatch metrics into your designated namespace.
 - uWSGI Stats Server must run on a network socket over HTTP. Support for unix file sockets is not currently supported, but could be added in the future.
+- Python 3
 
 Install
 -------
@@ -35,6 +36,11 @@ By default, uwsgi-cloudwatch will report metrics every minute. If you wanted to 
 
 ```bash
 uwsgi-cloudwatch http://localhost:9091 --namespace "Foo/Bar/Baz" --frequency 300
+```
+
+To set the region, use `--region`
+```bash
+uwsgi-cloudwatch http://localhost:9091 --region eu-west-1
 ```
 
 Metrics
