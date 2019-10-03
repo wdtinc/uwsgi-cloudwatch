@@ -12,7 +12,7 @@ setup(
     url='https://github.com/wdtinc/uwsgi-cloudwatch',
     install_requires=[
         'click==6.6',
-        'requests==2.11.1',
+        'requests==2.20.0',
         'boto3==1.4.0',
         'arrow==0.8.0'
     ],
